@@ -1,16 +1,13 @@
 <template>
-<div>
+  <div>
     <h1>Categories</h1>
-    <category-list :categories="categories"><category-list>
-</div>
-
+    <category-list :categories="categories"></category-list>
+  </div>
 </template>
-
-
 
 <script>
 import commerce from "~/common/commerce";
-import CategoryList from '../../components/CategoryList.vue';
+import CategoryList from "../../components/CategoryList.vue";
 export default {
   components: { CategoryList },
   async asyncData() {
