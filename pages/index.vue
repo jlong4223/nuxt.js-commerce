@@ -1,7 +1,13 @@
 <template>
   <div>
-    <pre>{{ JSON.stringify(merchant, null, 2) }}</pre>
-    <pre>{{ JSON.stringify(categories, null, 2) }}</pre>
+    <h1>{{ merchant.business_name }}</h1>
+    <h3>
+      <n-link to="/categories">Categories</n-link>
+    </h3>
+    <category-list :categories="categories"></category-list>
+    <h3>
+      <n-link to="/products">Products</n-link>
+    </h3>
     <product-list :products="products"></product-list>
   </div>
 </template>
