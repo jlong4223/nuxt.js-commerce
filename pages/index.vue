@@ -2,7 +2,7 @@
   <div>
     <pre>{{ JSON.stringify(merchant, null, 2) }}</pre>
     <pre>{{ JSON.stringify(categories, null, 2) }}</pre>
-    <pre>{{ JSON.stringify(products, null, 2) }}</pre>
+    <product-list :products="products"></product-list>
   </div>
 </template>
 
